@@ -1,0 +1,15 @@
+
+table {
+    size: 50%;
+  }
+  
+  table td {
+    background: #d2d2d2;
+    text-align: left;
+    vertical-align: center;
+    padding-top: 5em;
+    
+  }
+  image{
+      padding-right: 5em;
+  }

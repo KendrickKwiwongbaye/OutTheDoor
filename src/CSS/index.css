@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  .logoImage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+    padding-bottom: 30px;
+    padding-top: 25px;
+  }
+  .bgImage{
+    background-image: url("carBG.jpg");
+    min-height: 600px;
+    max-height: 790px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 60px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 500px;
+  }
+  ::-webkit-scrollbar {
+      width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+  }
+  ::-webkit-scrollbar-thumb {
+      background: #888;
+  }
+  ::selection{
+    background: rgb(0,123,255,0.3);
+  }
+  .content{
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 30px;
+  }
+  .contentNav{
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 30px;
+  }
+  .navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    padding: 10px 0;
+    transition: all 0.3s ease;
+    background: #4C96D6;
+  }
+  .navbar.sticky{
+    background: #4C96D6;
+    padding: 10px 0;
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+  }
+  .navbar .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar ul{
+    padding: 0px 40px 0px 40px;
+  }
+  .navbar .logo a{
+    color: black;
+    font-size: 80px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .navbar .menu-list{
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 10px 0px 10px;
+  }
+  .menu-list li{
+    list-style: none;
+    padding: 0px 45px 0px 45px;
+  }
+  .menu-list li a{
+    color: black;
+    font-size: 20.4px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  .menu-list li a:hover{
+    color: white;
+  }
+
+  .about{
+    padding: 30px 0;
+  }
+  .about .title{
+    font-size: 38px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 50px;
+  }
+  .search{
+    text-align: center;
+    justify-content: center;
+  }
+  .about p{
+    padding-top: 20px;
+    text-align: justify;
+  }
+  .icon{
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+  }
+  .menu-list .cancel-btn{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+  }
+  @media (max-width: 1230px) {
+    .content{
+      padding: 0 60px;
+    }
+  }
+  @media (max-width: 1100px) {
+    .content{
+      padding: 0 40px;
+    }
+  }
+  @media (max-width: 900px) {
+    .content{
+      padding: 0 30px;
+    }
+  }
+  @media (max-width: 868px) {
+    body.disabled{
+      overflow: hidden;
+    }
+    .icon{
+      display: block;
+    }
+    .icon.hide{
+      display: none;
+    }
+    .navbar .menu-list{
+      position: fixed;
+      height: 100vh;
+      width: 100%;
+      max-width: 400px;
+      left: -100%;
+      top: 0px;
+      display: block;
+      padding: 40px 0;
+      text-align: center;
+      background: gray;
+      transition: all 0.3s ease;
+    }
+    .navbar.show .menu-list{
+      left: 0%;
+    }
+    .navbar .menu-list li{
+      margin-top: 45px;
+    }
+    .navbar .menu-list li a{
+      font-size: 23px;
+      margin-left: -100%;
+      transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    .navbar.show .menu-list li a{
+      margin-left: 0px;
+    }
+  }
+  @media (max-width: 380px) {
+    .navbar .logo a{
+      font-size: 27px;
+    }
+  }
+  .banner{
+    background: url("carBG.jpg") no-repeat;
+    padding: 30px 0;
+
+  }
+  .content {
+    padding: 16px;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .sticky + .content {
+    padding-top: 60px;
+  }
+  /*---------------------------------------------------------------------------------------*/
+
+  /* Browsing Cars CSS */
+
+  div.div1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+  }
+  
+  .a {
+    display: inline-block;
+    margin-bottom: 8px;
+    width: calc(50% - 5px);
+    margin-right: 8px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .a:nth-of-type(2n) {
+    margin-right: 0;
+  }
+  
+  @media screen and (min-width: 50em) {
+    .a {
+      width: calc(25% - 6px);
+    }
+    
+    .a:nth-of-type(2n) {
+      margin-right: 8px;
+    }
+    
+    .a:nth-of-type(4n) {
+      margin-right: 0;
+    }
+  }
+  
+  .a:hover img {
+    transform: scale(1.15);
+  }
+  
+  figure {
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  figcaption {
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  .imgCar {
+    border: none;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: transform .2s ease-in-out;
+  }
+  
+  .pCar .a {
+    display: inline;
+    font-size: 13px;
+    margin: 0;
+    text-decoration: underline;
+    color: blue;
+  }
+  
+  .pCar {
+    text-align: center;
+    font-size: 13px;
+    padding-top: 100px;
+  }
+
+  .carBrowse {
+    font-weight: 700;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    line-height: 1;
+    font-size: 24px;
+    color: #4C96D6;
+}
+
+.carType {
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 24px;
+}

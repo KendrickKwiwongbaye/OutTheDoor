@@ -1,0 +1,47 @@
+.button{
+    background-color:#4eb5f1;
+    color:#fff;
+    text-align: center;
+    display:inline-block;
+    border-radius: 5%;
+    height:30px;
+    width:150px;
+    margin:0 0.3em 0.3em 0;
+    border-color:white;
+    font-weight: 400;
+    transition: 0.5s;
+    box-sizing: border-box;
+    text-decoration:none;
+    border-style: none;
+    
+}
+.button:hover{
+    background-color:#4095c6;
+}
+.react-chatbot-kit-chat-container{
+    width: 295px;
+    position: relative;
+    left: 70%;
+    bottom: 31.6rem;
+}
+
+.chatbot{
+    height: .1px;
+    position: relative;
+    margin: none;
+}
+
+.react-chatbot-kit-chat-bot-message{
+    margin-left:none;
+    padding: 1rem;
+}
+
+.react-chatbot-kit-chat-bot-avatar-letter{
+    color: #4eb5f1;
+    margin-top: 40%;
+}
+
+.react-chatbot-kit-chat-bot-avatar-container{
+    background-color: #e7e7e7;
+}
+
