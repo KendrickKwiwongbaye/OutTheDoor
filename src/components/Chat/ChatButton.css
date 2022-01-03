@@ -21,8 +21,9 @@
 .react-chatbot-kit-chat-container{
     width: 295px;
     position: relative;
-    left: 70%;
-    bottom: 31.6rem;
+    left: 48rem;
+    bottom: 31.7rem;
+    zoom: .94;
 }
 
 .chatbot{
@@ -45,3 +46,89 @@
     background-color: #e7e7e7;
 }
 
+/*Responsiveness Below*/
+
+@media only screen and (max-width: 802px) {
+    .react-chatbot-kit-chat-container{
+        width: 400px;
+        position: relative;
+        left: 15rem;
+        bottom: 34.3em;
+        zoom: .85;
+
+    }
+
+    .react-chatbot-kit-chat-bot-message{
+        right: 120px;
+    }
+    
+}
+
+
+
+@media only screen and (max-width: 720px) {
+    .react-chatbot-kit-chat-container{
+        width: 400px;
+        position: relative;
+        left: 14rem;
+        bottom: 34.3em;
+        zoom: .85;
+
+    }
+
+    .react-chatbot-kit-chat-bot-message{
+        right: 120px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 650px) {
+    .react-chatbot-kit-chat-container{
+        width: 400px;
+        position: relative;
+        left: 11rem;
+        bottom: 34.3em;
+        zoom: .85;
+
+    }
+
+    .react-chatbot-kit-chat-bot-message{
+        right: 120px;
+    }
+    
+}
+
+@media only screen and (max-width: 590px) {
+    .react-chatbot-kit-chat-container{
+        align-self: center;
+        position: relative;
+        left: 7rem;
+        bottom: 34.3em;
+        zoom: .85;
+    }
+
+    .react-chatbot-kit-chat-bot-message{
+        right: 120px;
+    }
+    
+    
+  }
+
+@media only screen and (max-width: 500px) {
+    .react-chatbot-kit-chat-container{
+        align-self: center;
+        position: relative;
+        left: 7rem;
+        bottom: 34.3em;
+        zoom: .85;
+    }
+
+    .react-chatbot-kit-chat-bot-message{
+        right: 120px;
+    }
+    
+    
+  }
+
+  
